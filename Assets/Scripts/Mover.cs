@@ -10,7 +10,6 @@ public class Mover : MonoBehaviour
     void Start()
     {
         Debug.Log("Game has started");
-        Debug.Log("Game has started again");
     }
 
 
