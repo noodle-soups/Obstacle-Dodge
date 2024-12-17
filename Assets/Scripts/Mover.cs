@@ -3,9 +3,7 @@ using UnityEngine;
 public class Mover : MonoBehaviour
 {
 
-    [SerializeField] float xValue = 0.01f;
-    [SerializeField] float yValue = 0;
-    [SerializeField] float zValue = 0;
+
 
     void Start()
     {
@@ -15,6 +13,13 @@ public class Mover : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(xValue, yValue, zValue);
+
+        float _xValue = Input.GetAxisRaw("Horizontal");
+        float _yValue = Input.GetAxisRaw("Vertical");
+        float _zValue = 0;
+
+        transform.Translate(_xValue, _yValue, _zValue);
+
+        Debug.Log("_xValue: " + _xValue.ToString() + " | _yValue: " + _yValue.ToString());
     }
 }
