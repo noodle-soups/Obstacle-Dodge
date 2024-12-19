@@ -3,8 +3,14 @@ using UnityEngine;
 public class Dropper : MonoBehaviour
 {
 
+    [SerializeField] float dropTime = 3;
+
     void Update()
-    {;
-        Debug.Log(Time.time);
+    {
+        if (Time.time > dropTime)
+        {
+            Debug.Log("Drop!");
+        }
+
     }
 }
