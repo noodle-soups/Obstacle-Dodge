@@ -14,6 +14,29 @@ public class Missile : MonoBehaviour
 
     void Update()
     {
+        MoveMissile();
+        DestroyWhenReached();
+    }
+
+    private void MoveMissile()
+    {
         transform.position = Vector3.MoveTowards(transform.position, playerPos, missileSpeed * Time.deltaTime);
     }
+
+    void DestroyWhenReached()
+    {
+        if (transform.position == playerPos)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Destroy(gameObject);
+        }
+    }
+
 }
