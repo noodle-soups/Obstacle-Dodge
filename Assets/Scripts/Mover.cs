@@ -5,20 +5,9 @@ public class Mover : MonoBehaviour
 
     [SerializeField] float moveSpeed = 10f;
 
-    void Start()
-    {
-        PrintInstruction();
-    }
-
-
     void Update()
     {
         MovePlayer();
-    }
-
-    void PrintInstruction()
-    {
-        Debug.Log("Print something");
     }
 
     void MovePlayer()

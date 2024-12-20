@@ -189,7 +189,7 @@ Transform:
   m_GameObject: {fileID: 4391312}
   serializedVersion: 2
   m_LocalRotation: {x: 0.30070576, y: 0, z: 0, w: 0.953717}
-  m_LocalPosition: {x: 0, y: 8.1, z: -7.5}
+  m_LocalPosition: {x: 0, y: 8, z: -7.5}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -359,7 +359,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.30070576, y: 0, z: 0, w: 0.953717}
-  m_LocalPosition: {x: 0, y: 8.1, z: -7.5}
+  m_LocalPosition: {x: 0, y: 8, z: -7.5}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -624,7 +624,7 @@ GameObject:
   - component: {fileID: 830819163}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -725,7 +725,7 @@ Transform:
   m_GameObject: {fileID: 830819156}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.6, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -770,6 +770,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16c2a48a3a4cfff4db3bce476cdbb51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHitScore: 3
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,6 +894,7 @@ GameObject:
   - component: {fileID: 1495369998}
   - component: {fileID: 1495369997}
   - component: {fileID: 1495370002}
+  - component: {fileID: 1495370003}
   - component: {fileID: 1495370001}
   m_Layer: 0
   m_Name: Dropper
@@ -984,7 +986,7 @@ Transform:
   m_GameObject: {fileID: 1495369996}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 10, z: 9}
+  m_LocalPosition: {x: 1, y: 5, z: 9}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1030,6 +1032,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
+--- !u!114 &1495370003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495369996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c50feb7bc73adeb488fffdbedfe7e8b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1615184927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,6 +1056,7 @@ GameObject:
   - component: {fileID: 1615184931}
   - component: {fileID: 1615184930}
   - component: {fileID: 1615184929}
+  - component: {fileID: 1615184933}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Untagged
@@ -1093,7 +1108,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5844e7ffda07eea4cb81f9f989c86b7d, type: 2}
+  - {fileID: 2100000, guid: d9c44a651ccaa0741a0038f780667ebd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1132,12 +1147,24 @@ Transform:
   m_GameObject: {fileID: 1615184927}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11, y: 2.5, z: 0}
+  m_LocalPosition: {x: 7, y: 2.5, z: 4}
   m_LocalScale: {x: 1, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1615184933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615184927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c50feb7bc73adeb488fffdbedfe7e8b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1644609371 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7279118342687694915, guid: 8e70f7855b5b6f64aa48ba3fab00984c, type: 3}
@@ -1252,7 +1279,7 @@ GameObject:
   - component: {fileID: 2122026153}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
