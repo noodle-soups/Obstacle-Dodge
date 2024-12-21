@@ -1,24 +1,25 @@
 using UnityEngine;
 
-public class Dropper : MonoBehaviour
+public class DropperTrigger : MonoBehaviour
 {
 
-    [SerializeField] float timeToDrop = 3;
-    Rigidbody rb;
 
-    void Start()
+    [SerializeField] GameObject obstacle;
+    Rigidbody obstacleRb;
+
+    private void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        rb.useGravity = false;
+        obstacleRb = obstacle.GetComponent<Rigidbody>();
+        obstacleRb.useGravity = false;
     }
 
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        if (Time.time > timeToDrop)
+        if (other.gameObject.tag == "Player")
         {
-            Debug.Log("Drop!");
-            rb.useGravity = true;
+            Debug.Log("Dropper triggered");
+            obstacleRb.useGravity = true;
         }
-
     }
+
 }
