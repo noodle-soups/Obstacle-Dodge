@@ -4,11 +4,11 @@ public class ScoreManager : MonoBehaviour
 {
 
     public int playerHitScore = 3;
-    Mover moverScript;
+    PlayerMovement playerMovementScript;
 
     private void Start()
     {
-        moverScript = GetComponent<Mover>();
+        playerMovementScript = GetComponent<PlayerMovement>();
     }
 
     private void Update()
@@ -20,7 +20,7 @@ public class ScoreManager : MonoBehaviour
     {
         if (playerHitScore == 0)
         {
-            moverScript.enabled = false;
+            playerMovementScript.enabled = false;
         }
     }
 
