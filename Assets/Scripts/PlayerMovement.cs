@@ -5,6 +5,11 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] float moveSpeed = 10f;
 
+    private void Start()
+    {
+
+    }
+
     void Update()
     {
         MovePlayer();
@@ -14,7 +19,8 @@ public class PlayerMovement : MonoBehaviour
     {
         float _xValue = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
         float _zValue = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
-        transform.Translate(_xValue, 0, _zValue);
+        Vector3 _move = new Vector3(_xValue, 0, _zValue);
+        transform.Translate(_move);
     }
 
 }

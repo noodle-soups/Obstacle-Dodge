@@ -7,6 +7,11 @@ public class Mover : MonoBehaviour
     [SerializeField] private Transform[] positions;
     private int currentIndexTarget = 0;
 
+    private void Start()
+    {
+
+    }
+
 
     void Update()
     {
