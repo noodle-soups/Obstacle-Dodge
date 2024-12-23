@@ -2,16 +2,10 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed;
 
+    [SerializeField] private float moveSpeed;
     [SerializeField] private Transform[] positions;
     private int currentIndexTarget = 0;
-
-    private void Start()
-    {
-
-    }
-
 
     void Update()
     {

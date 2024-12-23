@@ -1458,7 +1458,7 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 921963801}
   m_SourcePrefab: {fileID: 100100000, guid: eaf61a51f03e25b4ea25509ad3a71a1c, type: 3}
---- !u!1001 &5624067160824433442
+--- !u!1001 &8267930598204358860
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1466,55 +1466,47 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 441826486924302540, guid: f2d1892ef9057d4469a98724af3f6827, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: d9c44a651ccaa0741a0038f780667ebd, type: 2}
-    - target: {fileID: 7236140795287834690, guid: f2d1892ef9057d4469a98724af3f6827, type: 3}
+    - target: {fileID: 2986063153852882652, guid: f2d1892ef9057d4469a98724af3f6827, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 7236140795287834690, guid: f2d1892ef9057d4469a98724af3f6827, type: 3}
+    - target: {fileID: 2986063153852882652, guid: f2d1892ef9057d4469a98724af3f6827, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7236140795287834690, guid: f2d1892ef9057d4469a98724af3f6827, type: 3}
+    - target: {fileID: 2986063153852882652, guid: f2d1892ef9057d4469a98724af3f6827, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3
+      value: -2
       objectReference: {fileID: 0}
-    - target: {fileID: 7236140795287834690, guid: f2d1892ef9057d4469a98724af3f6827, type: 3}
+    - target: {fileID: 2986063153852882652, guid: f2d1892ef9057d4469a98724af3f6827, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7236140795287834690, guid: f2d1892ef9057d4469a98724af3f6827, type: 3}
+    - target: {fileID: 2986063153852882652, guid: f2d1892ef9057d4469a98724af3f6827, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7236140795287834690, guid: f2d1892ef9057d4469a98724af3f6827, type: 3}
+    - target: {fileID: 2986063153852882652, guid: f2d1892ef9057d4469a98724af3f6827, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7236140795287834690, guid: f2d1892ef9057d4469a98724af3f6827, type: 3}
+    - target: {fileID: 2986063153852882652, guid: f2d1892ef9057d4469a98724af3f6827, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7236140795287834690, guid: f2d1892ef9057d4469a98724af3f6827, type: 3}
+    - target: {fileID: 2986063153852882652, guid: f2d1892ef9057d4469a98724af3f6827, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7236140795287834690, guid: f2d1892ef9057d4469a98724af3f6827, type: 3}
+    - target: {fileID: 2986063153852882652, guid: f2d1892ef9057d4469a98724af3f6827, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7236140795287834690, guid: f2d1892ef9057d4469a98724af3f6827, type: 3}
+    - target: {fileID: 2986063153852882652, guid: f2d1892ef9057d4469a98724af3f6827, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8423507201416951749, guid: f2d1892ef9057d4469a98724af3f6827, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8571457510879693806, guid: f2d1892ef9057d4469a98724af3f6827, type: 3}
+    - target: {fileID: 8201847496308929638, guid: f2d1892ef9057d4469a98724af3f6827, type: 3}
       propertyPath: m_Name
       value: Dropper
       objectReference: {fileID: 0}
@@ -1535,6 +1527,6 @@ SceneRoots:
   - {fileID: 1615184932}
   - {fileID: 549602026}
   - {fileID: 3453613711715156909}
-  - {fileID: 5624067160824433442}
   - {fileID: 3282720847331273545}
   - {fileID: 139050165753045293}
+  - {fileID: 8267930598204358860}
