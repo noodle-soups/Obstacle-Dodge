@@ -18,10 +18,23 @@ public class PlayerMovement : MonoBehaviour
 
     void MovePlayer()
     {
-        float _xValue = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
-        float _zValue = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
+        // raw inputs
+        float _xValue = Input.GetAxis("Horizontal");
+        float _zValue = Input.GetAxis("Vertical");
+
+        // create _move vector
         Vector3 _move = new Vector3(_xValue, 0, _zValue);
-        //transform.Translate(_move);
+
+        // normalize
+        if (_move.magnitude > 1f)
+        {
+            _move.Normalize();
+        }
+
+        // apply speed
+        _move *= moveSpeed * Time.deltaTime;
+
+        // move player
         characterController.Move(_move);
     }
 

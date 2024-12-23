@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Mover Trigger
+  - Obstacle
   layers:
   - Default
   - TransparentFX
