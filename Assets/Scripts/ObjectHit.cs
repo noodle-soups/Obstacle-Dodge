@@ -10,10 +10,11 @@ public class ObjectHit : MonoBehaviour
         mr = GetComponent<MeshRenderer>();
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Player")
+        if(other.gameObject.tag == "Player")
         {
+            Debug.Log("Hit triggered");
             mr.material.color = Color.red;
         }
     }
