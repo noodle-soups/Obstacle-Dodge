@@ -1,17 +1,24 @@
 using UnityEngine;
 
-public class HelathManager : MonoBehaviour
+public class PlayerHealthManager : MonoBehaviour
 {
 
-    public int playerHealth = 3;
+    // references
     PlayerMovement playerMovementScript;
-    [SerializeField] private bool readyToDestroy;
+
+    // health
+    public int playerHealth = 3;
+
+    // state
+    public bool playerReadyToDestroy;
+
+    // animation
     private float killRotation = 1000;
 
     private void Start()
     {
         playerMovementScript = GetComponent<PlayerMovement>();
-        readyToDestroy = false;
+        playerReadyToDestroy = false;
     }
 
     private void Update()
@@ -30,13 +37,13 @@ public class HelathManager : MonoBehaviour
         if (playerHealth == 0)
         {
             playerMovementScript.enabled = false;
-            readyToDestroy = true;
+            playerReadyToDestroy = true;
         }
     }
 
     private void DestroyPlayer()
     {
-        if (readyToDestroy)
+        if (playerReadyToDestroy)
         {
             // spin & shrink player
             transform.Rotate(0, killRotation * Time.deltaTime, 0);

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5441023634380918039}
   - component: {fileID: 3085850042493812752}
   - component: {fileID: 3694987581457016810}
-  - component: {fileID: 3785649855177513640}
+  - component: {fileID: 5434965528516694988}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
---- !u!114 &3785649855177513640
+--- !u!114 &5434965528516694988
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,7 +161,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3765154779308422674}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d36568fdcb813a4469987ff9ccb9b64a, type: 3}
+  m_Script: {fileID: 11500000, guid: 26c518047764a8049b52509cffdfde75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: 3
