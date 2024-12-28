@@ -35,7 +35,8 @@ public class PlayerMovement : MonoBehaviour
         _move *= moveSpeed * Time.deltaTime;
 
         // move player
-        characterController.Move(_move);
+        //characterController.Move(_move);
+        transform.Translate(_move);
     }
 
 }
