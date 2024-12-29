@@ -3,12 +3,16 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
+    [SerializeField] private Animator animator;
     private CharacterController characterController;
-    [SerializeField] float moveSpeed = 10f;
+
+    [SerializeField] private float moveSpeed = 10f;
+
 
     private void Start()
     {
         characterController = GetComponent<CharacterController>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -35,8 +39,11 @@ public class PlayerMovement : MonoBehaviour
         _move *= moveSpeed * Time.deltaTime;
 
         // move player
-        //characterController.Move(_move);
         transform.Translate(_move);
+
+        // animation
+        animator.SetFloat("x Movement", _xValue);
+        animator.SetFloat("z Movement", _zValue);
     }
 
 }
