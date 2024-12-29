@@ -4,7 +4,7 @@ public class PlayerHealthManager : MonoBehaviour
 {
 
     // references
-    PlayerMovement playerMovementScript;
+    private PlayerMovement playerMovementScript;
 
     // health
     public int playerHealth = 3;
