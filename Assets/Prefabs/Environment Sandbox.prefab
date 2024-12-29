@@ -494,7 +494,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4173116146594019173}
   m_Layer: 0
-  m_Name: Sandbox Environment
+  m_Name: Environment Sandbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

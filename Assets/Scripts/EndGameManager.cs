@@ -32,8 +32,6 @@ public class EndGameManager : MonoBehaviour
     {
         ActivateEndGameUI();
         ActivateLevelCompleteUI();
-
-        Debug.Log(currentSceneIndex);
     }
 
     private void ActivateEndGameUI()
