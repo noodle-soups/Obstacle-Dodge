@@ -46,3 +46,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   endGameUI: {fileID: 0}
+  levelCompleteUI: {fileID: 0}
+  levelCompleteTile: {fileID: 0}

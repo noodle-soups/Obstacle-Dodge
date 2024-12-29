@@ -15,16 +15,25 @@ public class EndGameManager : MonoBehaviour
     [SerializeField] private GameObject levelCompleteTile;
     private LevelComplete levelCompleteScript;
 
+    // scenes
+    private int currentSceneIndex;
+
     private void Start()
     {
         endGameUI.SetActive(false);
+        levelCompleteUI.SetActive(false);
+
         levelCompleteScript = levelCompleteTile.GetComponent<LevelComplete>();
+
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
 
     private void Update()
     {
         ActivateEndGameUI();
         ActivateLevelCompleteUI();
+
+        Debug.Log(currentSceneIndex);
     }
 
     private void ActivateEndGameUI()
@@ -45,12 +54,12 @@ public class EndGameManager : MonoBehaviour
 
     public void LoadCurrentLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(currentSceneIndex);
     }
 
     public void LoadNextLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(currentSceneIndex += 1);
     }
 
 }
