@@ -5,7 +5,7 @@ public class PlayerMovement : MonoBehaviour
 {
 
     [SerializeField] private Animator animator;
-    private CharacterController characterController;
+    private Rigidbody rb;
 
     // movement
     [SerializeField] private float moveSpeed;
@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        characterController = GetComponent<CharacterController>();
+        rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
     }
 
@@ -67,10 +67,12 @@ public class PlayerMovement : MonoBehaviour
             _dashDirection = moveInput;
         }
 
+        _dashDirection *= dashSpeed;
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Dash");
-            transform.Translate(_dashDirection * dashSpeed);
+            transform.Translate(_dashDirection);
         }
     }
 

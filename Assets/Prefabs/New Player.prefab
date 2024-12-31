@@ -1109,7 +1109,6 @@ GameObject:
   - component: {fileID: 4785394151366969834}
   - component: {fileID: 1479729847755871120}
   - component: {fileID: 6014681737383200005}
-  - component: {fileID: 1406329320202965695}
   - component: {fileID: 8275058294133842215}
   - component: {fileID: 1722205758660757942}
   - component: {fileID: 1895055008029631233}
@@ -1182,31 +1181,6 @@ CapsuleCollider:
   m_Height: 1.91
   m_Direction: 1
   m_Center: {x: 0, y: 0.96, z: 0}
---- !u!143 &1406329320202965695
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5270040651571237712}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Height: 1.91
-  m_Radius: 0.26
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.0001
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.96, z: 0}
 --- !u!54 &8275058294133842215
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1248,6 +1222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   moveSpeed: 7
+  dashSpeed: 10
 --- !u!114 &1895055008029631233
 MonoBehaviour:
   m_ObjectHideFlags: 0
